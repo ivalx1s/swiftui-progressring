@@ -23,7 +23,7 @@
 
 import SpriteKit
 
-public final class ActivityRingView: SKView {
+final class ActivityRingView: SKView {
 
     // MARK:- Public variables
 

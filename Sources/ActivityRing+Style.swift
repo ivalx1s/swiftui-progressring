@@ -1,6 +1,6 @@
 import SwiftUI
 
-public extension ActivityRing {
+public extension ProgressRing {
 	struct Style {
 		let lineWidth: CGFloat
 		let tailColor: SwiftUI.Color

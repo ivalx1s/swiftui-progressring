@@ -2,7 +2,7 @@ import SwiftUI
 import SpriteKit
 
 @available(iOS 14, macOS 11, watchOS 7, *)
-public struct ActivityRing: View {
+public struct ProgressRing: View {
 	
 	@State       private var viewSize:        CGRect                  = .zero
 	@StateObject private var ringCoordinator: ActivityRingCoordinator = .init()

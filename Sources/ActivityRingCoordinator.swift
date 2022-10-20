@@ -5,7 +5,7 @@
 
 import SwiftUI
 
-public final class ActivityRingCoordinator: ObservableObject {
+final class ActivityRingCoordinator: ObservableObject {
 	private(set) var scene: ActivityRingScene = .init()
 	private(set) var progress: CGFloat = .zero
     private(set) var size: CGSize = .zero
@@ -26,7 +26,7 @@ public final class ActivityRingCoordinator: ObservableObject {
         self.scene.ringWidth = val
     }
 
-    func applyStyle(_ val: ActivityRing.Style) {
+    func applyStyle(_ val: ProgressRing.Style) {
         self.scene.backgroundRingColor = UIColor(val.backgroundColor)
         self.scene.startColor = UIColor(val.tailColor)
         self.scene.endColor = UIColor(val.headColor)
