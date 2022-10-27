@@ -11,7 +11,7 @@ final class ActivityRingCoordinator: ObservableObject {
     private(set) var size: CGSize = .zero
 
     func setProgress(_ val: CGFloat) {
-        let duration = abs(self.progress - val)
+        let duration = abs(self.progress - val) * 1.5
         self.progress = val
         scene.animateProgress(to: max(0, val), withDuration: duration)
     }
@@ -30,5 +30,6 @@ final class ActivityRingCoordinator: ObservableObject {
         self.scene.backgroundRingColor = UIColor(val.backgroundColor)
         self.scene.startColor = UIColor(val.tailColor)
         self.scene.endColor = UIColor(val.headColor)
+        self.scene.backgroundColor = .clear
     }
 }
